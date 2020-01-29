@@ -120,12 +120,8 @@
           }
         },
         "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
-          "options": {
-            "outputPath": "dist/lista-de-tarefas",
-            "netlifyToken": "",
-            "siteId": ""
-          }
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

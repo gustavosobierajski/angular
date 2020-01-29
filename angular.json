@@ -118,8 +118,17 @@
               "devServerTarget": "lista-de-tarefas:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/lista-de-tarefas",
+            "netlifyToken": "",
+            "siteId": ""
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lista-de-tarefas"
 }

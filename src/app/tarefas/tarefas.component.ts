@@ -45,7 +45,7 @@ export class TarefasComponent implements OnInit {
                   }
                 }
               );
-  
+              this.listarTodasTarefas();
   }
 
   concluirTarefa(t: Tarefa) {

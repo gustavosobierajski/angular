@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 	
 import { Tarefa } from './models/tarefa.model';
 import {HttpClient} from '@angular/common/http';
-
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-tarefas',
@@ -14,7 +14,7 @@ export class TarefasComponent implements OnInit {
   readonly apiURL : string;
   tarefas: Tarefa[];
 
-  constructor(private http : HttpClient) {
+  constructor(private http : HttpClient, private location: Location ) {
     this.apiURL = 'https://enigmatic-everglades-10053.herokuapp.com/tarefa';
   }
 
@@ -45,7 +45,7 @@ export class TarefasComponent implements OnInit {
                   }
                 }
               );
-              this.listarTodasTarefas();
+              location.reload();
   }
 
   concluirTarefa(t: Tarefa) {

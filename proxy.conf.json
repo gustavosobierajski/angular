@@ -1,6 +1,6 @@
 {
     "/tarefa/tarefa": {
-      "target": "https://fierce-temple-02493.herokuapp.com/",
+      "target": "https://enigmatic-everglades-10053.herokuapp.com/",
       "secure": false,
       "pathRewrite": {
         "^/tarefa/tarefa": ""
